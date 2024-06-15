@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('mime')->nullable();
             $table->integer('size')->nullable();
             $table->timestamps();
-            $table->foreignIdFor(\app\Models\User::class, 'created_by');
+            $table->foreignIdFor(\App\Models\User::class, 'created_by');
             $table->foreignIdFor(\App\Models\User::class, '
             updated_by');
             $table->softDeletes();
